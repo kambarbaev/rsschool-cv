@@ -1,6 +1,9 @@
 * {
 box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth; 
+}
 html,
 body {  
   height: 100%;
@@ -8,16 +11,15 @@ body {
   margin: 0;
   font-family: var(--second-font);
 }
-.wrapper {
+.main-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
 }
 .container {
   max-width: 1040px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 0px;
 }
 :root {
   --main-font: 'Montserrat', "Arial", sans-serif;
@@ -25,6 +27,9 @@ body {
   --title-font:  'Russo One', sans-serif;
   --background-color: #1D1E24;
   --text-color: #49515dc2;
+}
+.main-wrapper {
+  background-color: rgb(231, 226, 226);
 }
 .menu {
   display: flex;
@@ -42,24 +47,42 @@ body {
 .menu__list {
   display: flex;
   padding: 0;
+  list-style: none;
 }
 .menu__item:not(:last-child) {
   margin-right: 30px;
 }
 .menu__link {
+  position: relative;
   color: var(--text-color);
   text-decoration: none;
 }
+.menu__link::after {
+  content: '';
+  display: none;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #5757f8;
+}
+.menu__link:hover {
+  color: black;
+  transition: all .3s ease-in;
+}
+.menu__link:hover::after {
+  display: inline-block;
+}
+
 .header__content {
   background-color: #5757f8;
   border-radius: 20px 20px 0 0;
+  
 }
 .header__info {
   display: flex;
   padding: 40px 40px;
-}
-.header__photo {
-  
 }
 .header__photo-wrapper {
   position: relative;
@@ -98,8 +121,6 @@ body {
   padding: 0;
   margin: 0;
 }
-.social__item {
-}
 .social__github {
   background: url('../img/icons/github-svgrepo-com.svg');
   background-size: 25px;
@@ -130,6 +151,172 @@ body {
 .social__link:hover{
   box-shadow: 0px 6px 18px rgba(32, 32, 32, 0.575);
 }
-.main {
-  
+.main__container {
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0px 0px 18px #cacaca;
+  background-color: #fff; 
 }
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+}
+.about__content {
+  flex: 1 0 50%;
+  padding-right: 5px;
+}
+.about__title {
+  margin: 15px 0;
+}
+.about__text {
+  font-family: var(--main-font);
+}
+.about__contacts {
+  flex: 1 0 50%;
+  font-family: var(--main-font);
+  padding-top: 40px;
+  padding-left: 80px;
+}
+.about__contacts div {
+  margin-bottom: 5px;
+}
+.about__contacts div a {
+  font-style: italic;
+  text-decoration: none;
+  color: var(--text-color);
+  margin-left: 15px;
+  transition: all 0.3 ease-in;
+}
+.about__contacts a:hover {
+  color: #1D1E24;
+}
+.skills__wrapper {
+padding: 40px;
+}
+.skills__list {
+}
+.skills__item {
+  display: flex;
+  align-items: center;
+}
+.skills__progress-title {
+  flex: 0 0 30%;
+  font-weight: bold;
+}
+.skills__progress-bar {
+  background-color: #5757f8;
+  height: 25px;
+  width: 30%;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+.skills__progress-bar span {
+  display: inline-block;
+  height: 25px;
+  border-radius: 3px;
+}
+.html-progress span {
+  background-color: #34c2e3;
+  width: 50%;
+}
+.css-progress span{
+  background-color: #34c2e3;
+  width: 50%;
+}
+.js-progress span{
+  background-color: #34c2e3;
+  width: 5%;
+}
+.php-progress span{
+  background-color: #34c2e3;
+  width: 5%;
+}
+.adobe-progress span{
+  background-color: #34c2e3;
+  width: 30%;
+}
+.corel-progress span{
+  background-color: #34c2e3;
+  width: 60%;
+}
+.example-code__wrapper {
+  padding: 40px;
+}
+.example-code__content {
+  padding: 20px 0;
+  font-size: 20px;
+  background-color: #cecaca;
+  display: inline-block;
+  padding: 0 15px;
+  border: 1px solid #cecaca;
+  box-shadow: 0px 0px 14px 5px rgba(34, 60, 80, 0.23) inset;
+}
+.education__wrapper {
+  padding: 40px;
+}
+.education__list, .languages__list {
+  list-style: none;
+}
+.education__item::before,
+.languages__item::before {
+  content: "";
+  position: relative;
+  top:22px;
+  left: -20px;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5757f8;
+}
+.education__title {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.education__text {
+  font-size: 18px;
+}
+.languages__wrapper {
+  padding: 40px;
+}
+.languages__item {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.languages__item strong{
+  font-size: 20px;
+}
+.languages__item::before {
+  top: 0px;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+.footer__rsslogo {
+  height: 100px;
+  width: 200px;
+}
+.footer__created {
+  font-size: 20px;
+  color: var(--text-color);
+}
+.footer__github-link a{
+  display: inline-block;
+  width: 60px;
+  height:60px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: url('../img/icons/github-svgrepo-com.svg');
+  background-size: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in;
+}
+
+
+
