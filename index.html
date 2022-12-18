@@ -11,65 +11,175 @@
   <title>CV</title>
 </head>
 <body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="header__wrapper">
-        <div class="header__container container">
-          <nav class="header__menu menu">
-            <div class="menu__fullname">Talgat <span class="colored">Kambarbaev</span></div>
-            <ul class="menu__list">
-              <div class="menu__item"><a href="#" class="menu__link">About</a></div>
-              <div class="menu__item"><a href="#" class="menu__link">Education</a></div>
-              <div class="menu__item"><a href="#" class="menu__link">Skills</a></div>
-              <div class="menu__item"><a href="#" class="menu__link">Code example</a></div>
-              <div class="menu__item"><a href="#" class="menu__link">Languages</a></div>
-            </ul>
-          </nav>
-          <div class="header__content">
-            <div class="header__info">
-              <div class="header__photo">
-                <div class="header__photo-wrapper">
-                  <img src="assets/img/profilephoto.jpg" alt="profile photo" width="250" height="250">
+  <div class="main-wrapper">
+    
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__container container">
+            <nav class="header__menu menu">
+              <div class="menu__fullname">Talgat <span class="colored">Kambarbaev</span></div>
+              <ul class="menu__list">
+                <li class="menu__item"><a href="#about" class="menu__link">About</a></li>
+                <li class="menu__item"><a href="#skills" class="menu__link">Skills</a></li>
+                <li class="menu__item"><a href="#example-code" class="menu__link">Code examples</a></li>
+                <li class="menu__item"><a href="#education" class="menu__link">Education</a></li>
+                <li class="menu__item"><a href="#languages" class="menu__link">Languages</a></li>
+              </ul>
+            </nav>
+            <div class="header__content">
+              <div class="header__info">
+                <div class="header__photo">
+                  <div class="header__photo-wrapper">
+                    <img src="assets/img/profilephoto.jpg" alt="profile photo" width="250" height="250">
+                  </div>
+                </div>
+                <div class="header__text">
+                  <h1 class="header__fullname">Talgat Kambarbaev</h1>
+                  <div class="header__position">Future Front-end Developer</div>
+                  <div class="header__social-links social">
+                    <ul class="social__list">
+                      <li class="social__item"><a class="social__link social__phone" href="tel:+77079980580"></a></li>
+                      <li class="social__item"><a class="social__link social__email" href="mailto:akamypka@gmail.com"></a></li>
+                      <li class="social__item"><a class="social__link social__github" href="https://github.com/kambarbaev/" target="_blank"></a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div class="header__text">
-                <h1 class="header__fullname">Talgat Kambarbaev</h1>
-                <div class="header__position">Future Front-end Developer</div>
-                <div class="header__social-links social">
-                  <ul class="social__list">
-                    <li class="social__item"><a  class="social__link social__phone" href=""></a></li>
-                    <li class="social__item"><a  class="social__link social__email" href=""></a></li>
-                    <li class="social__item"><a  class="social__link social__github" href=""></a></li>
+            </div>
+          </div>
+        </div>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="main__wrapper">
+          <div class="main__container container">
+            <section class="about" id="about">
+              <div class="about__content">
+                <h2 class="about__title section-title">About <span class="colored">me</span></h2>
+                <div class="about__text">Hello. I'm 35 years old and have been a system administrator for a very long time. I think I've done my best here. I want to develop and gain new experience, to become a front-end developer.</div>
+              </div>
+              <div class="about__contacts">
+                <div class="about__email">Email: <a href="mailto:akamypka@gmail.com">akamypka@gmail.com</a></div>
+                <div class="about__phone">Phone: <a href="tel:+77079980580">+77079980580</a></div>
+                <div class="about__location">Location: <a href="https://goo.gl/maps/gMj6q24exVQQjE239">Almaty, kazakhstan</a></div>
+              </div>
+            </section>
+            <section class="skills" id="skills">
+              <div class="skills__wrapper">
+                <h2 class="skills__title section-title">Skill<span class="colored">s</span></h2>
+                <div class="skills__content">
+                  <ul class="skills__list">
+                    <li class="skills__item">
+                      <div class="skills__progress-title">HTML</div>
+                      <div class="skills__progress-bar html-progress">
+                        <span></span>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__progress-title">CSS</div>
+                      <div class="skills__progress-bar css-progress">
+                        <span></span>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__progress-title">JS</div>
+                      <div class="skills__progress-bar js-progress">
+                        <span></span>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__progress-title">PHP</div>
+                      <div class="skills__progress-bar php-progress">
+                        <span></span>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__progress-title">Adobe Photoshop</div>
+                      <div class="skills__progress-bar adobe-progress">
+                        <span></span>
+                      </div>
+                    </li>
+                    <li class="skills__item">
+                      <div class="skills__progress-title">CorelDraw</div>
+                      <div class="skills__progress-bar corel-progress">
+                        <span></span>
+                      </div>
+                    </li>
                   </ul>
                 </div>
               </div>
-            </div>
-            <!-- <div class="header__contacts contacts ">
-              <div class="contacts__email">akamypka@gmail.com</div>
-              <div class="contacts__phone">+7 (707) 998 05 80</div>
-              <div class="contacts__age">35</div>
-              <div class="contacts__location">Almaty, Kazakhstan</div>
-            </div> -->
+            </section>
+            <section class="example-code" id="example-code">
+              <div class="example-code__wrapper">
+                <h2 class="example-code__title section-title">Code <span class="colored">Examples</span></h2>
+                <div class="example-code__content">
+                  <code>
+                    <pre>function addNum(a,b) {
+      return a + b;
+      }</pre>
+                  </code>
+                </div>
+              </div>
+            </section>
+            <section class="education" id="education">
+              <div class="education__wrapper">
+                <h2 class="education__title section-title">Educati<span class="colored">on</span></h2>
+                <div class="education__content">
+                  <ul class="education__list">
+                    <li class="education__item">
+                      <h3 class="education__title">RSSchool Pre-School 2022</h3>
+                      <div class="education__text">Preparatory course «JavaScript/Front-end. Stage 0"</div>
+                    </li>
+                    <li class="education__item">
+                      <h3 class="education__title">Freecodecamp</h3>
+                      <div class="education__text">Basic curse HTML and CSS </div>
+                    </li>
+                    <li class="education__item">
+                      <h3 class="education__title">Youtube</h3>
+                      <div class="education__text">Self-learning HTML & CSS on various YouTube videos</div>
+                    </li>
+                    <li class="education__item">
+                      <h3 class="education__title">Polytech college Almaty</h3>
+                      <div class="education__text">Computing equipment and information networks</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            <section class="languages" id="languages">
+              <div class="languages__wrapper">
+                <div class="languages__content">
+                  <h2 class="languages__title section-title">Languag<span class="colored">es</span></h2>
+                  <ul class="languages__list">
+                    <li class="languages__item">
+                      <strong>English</strong> - 
+                      According to the EF SET Quick Check results my level of English is somewhere between B1 Intermediate and B2 Upper Intermediate, but i think i'm at level A1 and now I'm also learning English
+                    </li>
+                    <li class="languages__item">
+                      <strong>Russia</strong> - Native
+                    </li>
+                    <li class="languages__item">
+                      <strong>Kazakh</strong> - Native Сonversational
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </div>
         </div>
-      </div>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="main__wrapper">
-        <div class="main__container container">
-          <section class="about" id="about">
-            <div class="about__content">
-              <h2 class="about__title section-title">About <span class="colored">me</span></h2>
-              <div class="about__text">Hello. I'm 35 years old and have been a system administrator for a very long time. I think I've done my best here. I want to develop and gain new experience, to become a front-end developer.</div>
+      </main>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__container container">
+            <div class="footer__content">
+              <div class="footer__rsslogo"><a href="https://rs.school/js-stage0/" target="_blank"><img src="assets/img/rs_school_js.svg" alt="RS School logotype"></a></div>
+              <div class="footer__created">Created in 2022</div>
+              <div class="footer__github-link"><a href="https://github.com/kambarbaev/" target="_blank"></a></div>
             </div>
-          </section>
+          </div>
         </div>
-      </div>
-    </main>
-    <footer>
-      asd
-    </footer>
-</div>
+      </footer>
+    
+  </div>
 </body>
 </html>
