@@ -1,1 +1,1 @@
-# rsschool-cv
+https://kambarbaev.github.github.io/rsschool-cv/
