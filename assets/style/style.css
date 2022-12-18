@@ -139,6 +139,12 @@ body {
   background-position: center;
   background-repeat: no-repeat;  
 }
+.social__cv {
+  background: url('../img/icons/curriculum-vitae-resume-svgrepo-com.svg');
+  background-size: 25px;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
 .social__link {
   display: inline-block;
   width: 40px;
