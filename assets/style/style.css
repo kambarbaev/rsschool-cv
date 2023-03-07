@@ -2,10 +2,10 @@
 box-sizing: border-box;
 }
 html {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 html,
-body {  
+body { 
   height: 100%;
   padding: 0;
   margin: 0;
@@ -284,6 +284,50 @@ padding: 40px;
 .education__text {
   font-size: 18px;
 }
+.project {
+}
+.project__wrapper {
+  padding: 40px;
+}
+.project__title {
+  
+}
+.section-title {
+}
+.colored {
+}
+.project__content {
+}
+.project__list {
+}
+.project__item {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.project__item strong {
+  font-size: 20px;
+}
+.project__item a {
+  text-decoration: none;
+  color: #1D1E24;
+}
+.project__item::before {
+  content: "";
+    position: relative;
+    top:0;
+    left: -20px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #5757f8;
+}
+.project__item:first-child:hover a {
+color: green;
+}
+.project__item:last-child:hover a {
+  color: rgb(241, 131, 6);
+ }
 .languages__wrapper {
   padding: 40px;
 }
