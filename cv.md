@@ -37,4 +37,5 @@ RSSchool PreSchool JavaScript/Front-end Stage 0
 
 #### Projects
 *********************
-
+Plants: _[Plants](https://rolling-scopes-school.github.io/kambarbaev-JSFEPRESCHOOL2022Q4/plants/ "https://rolling-scopes-school.github.io/kambarbaev-JSFEPRESCHOOL2022Q4/plants/")_
+Momentum: _[Momentum](https://rolling-scopes-school.github.io/kambarbaev-JSFEPRESCHOOL2022Q4/momentum/ "https://rolling-scopes-school.github.io/kambarbaev-JSFEPRESCHOOL2022Q4/momentum/")_
