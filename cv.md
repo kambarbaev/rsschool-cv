@@ -30,3 +30,7 @@ function addNum(a,b) {
 #### English
 *********************
 My English is no very well - Starting now
+
+#### Education
+*********************
+RSSchool PreSchool JavaScript/Front-end Stage 0
